@@ -4,7 +4,7 @@ fn main() {
         "{:?}",
         include_str!("../input.txt")
             .lines()
-            .map(|s| re.split(s).filter(|s| !s.is_empty()).collect::<Vec<&str>>())
+            .map(|s| re.split(s).filter(|s| !s.is_empty()))
             .map(|s| {
                 s.into_iter()
                     .flat_map(|s| {
